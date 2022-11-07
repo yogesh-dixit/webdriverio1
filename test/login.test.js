@@ -1,9 +1,9 @@
 const loginPage=require('../pages/login.page')
 const configData=require('../config');
 const constants=require('../constants');
-describe('login page feature test',function(){
-    it('verify login page title',function(){
-        browser.url('/')
+describe('login page feature test',async(){
+    it('verify login page title',async(){
+        await browser.url('www.segoogle.com')
         browser.maximizeWindow()
         const title=loginPage.getPageTitle()
         console.log('login page title is :',title);
